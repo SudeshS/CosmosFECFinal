@@ -7,7 +7,7 @@ $PartyPackage = $_POST["partypackage"];
 $ReservationDate = $_POST["reservationdate"];
 $ReservationStartTime = $_POST["reservationtime"];
 
-if($Fname !=''&& $email !=''&& $Lname !=''&& $ReservationDate !='')
+if($Fname !=''&& $Email !=''&& $Lname !=''&& $ReservationDate !='')
 {
 //  To redirect form on a particular page
 header("Location:https://www.cosmos.ga/PackagesandReservations.html");
