@@ -10,7 +10,7 @@ $ReservationStartTime = $_POST["reservationtime"];
 if($Fname !=''&& $Email !=''&& $Lname !=''&& $ReservationDate !='')
 {
 //  To redirect form on a particular page
-header("Location:https://www.cosmosfec.ga/PackagesandReservations.html");
+header("Location:https://cosmosfec.ga/PackagesandReservations.html");
 }
 else{
 ?><span><?php echo "Please fill all fields.";?></span> <?php
