@@ -7,6 +7,15 @@ $PartyPackage = $_POST["partypackage"];
 $ReservationDate = $_POST["reservationdate"];
 $ReservationStartTime = $_POST["reservationtime"];
 
+if($Fname !=''&& $email !=''&& $Lname !=''&& $ReservationDate !='')
+{
+//  To redirect form on a particular page
+header("Location:https://www.cosmos.ga/PackagesandReservations.html");
+}
+else{
+?><span><?php echo "Please fill all fields.";?></span> <?php
+}
+
 $dataFile = "reservations.txt";
 $fh = fopen($dataFile, 'a');
 $comma_delmited_list = implode("\t", $_POST) . "\n";
