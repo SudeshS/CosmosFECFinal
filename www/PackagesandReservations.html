@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+
+	<body>
+
+		<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<title> Cosmos Party Packages and Reservations </title>
+
+
+				<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+				<!-- Latest compiled and minified CSS -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+				<!-- Optional theme -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+				<style>
+
+
+				body {margin: 0;}
+
+				ul.topnav {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #ff6600;
+					opacity: .85;
+				}
+
+				ul.topnav li {float: left;}
+
+				ul.topnav li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					font-family: 'Raleway', sans-serif;
+					color: white;
+				}
+
+				ul.topnav li a:hover:not(.active) {background-color: #e65c00;}
+
+				ul.topnav li a.active {background-color: #e65c00;}
+
+				ul.topnav li.right {float: right;}
+
+				@media screen and (max-width: 600px){
+					ul.topnav li.right,
+					ul.topnav li {float: none;}
+				}
+
+				li {
+
+				font-family: 'Raleway', sans-serif;
+				color: black;
+
+				}
+
+				a {
+
+				font-family: 'Raleway', sans-serif;
+
+				}
+
+				.galaxy {
+
+				height: 600px;
+				padding: none;
+				margin: none;
+				border: none;
+
+
+
+				}
+
+
+				.attractionopeningtext {
+
+				width: 100%;
+				height: 200px;
+				text-align: center;
+				vertical-align: middle;
+				font-family: 'Raleway', sans-serif;
+				font-size: 50px;
+				color: #ff6600;
+				border: none;
+				padding: none;
+				margin: none;
+				position: absolute;
+				top: 255px;
+				}
+
+
+				.linecontainer {
+
+				position: relative;
+				left: 30%;
+				width: 40%;
+				padding: 5px;
+				border: none;
+
+				}
+
+
+
+				.hlineabove {
+
+				border-width: 20px
+				width: 200px;
+				border-color: #ff6600;
+
+
+				}
+
+				.transparent {
+
+				width: 100%;
+				height: 300px;
+				position: absolute;
+				top: 190px;
+				background-color: black;
+				opacity: .7;
+
+
+				}
+
+
+				a {
+
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+
+				}
+
+
+				.packagetext {
+				width: 100%;
+				height: 200px;
+				text-align: center;
+				vertical-align: middle;
+				font-family: 'Raleway', sans-serif;
+				font-size: 30px;
+				color: #ff6600;
+				border: none;
+				padding: none;
+				margin: none;
+				position: absolute;
+				top: 675px;
+
+				}
+
+				.calendartext {
+				width: 100%;
+				height: 200px;
+				text-align: center;
+				vertical-align: middle;
+				font-family: 'Raleway', sans-serif;
+				font-size: 30px;
+				color: #ff6600;
+				border: none;
+				padding: none;
+				margin: none;
+				position: absolute;
+				top: 975px;
+
+				}
+
+				.reservationtext {
+				width: 100%;
+				height: 200px;
+				text-align: center;
+				vertical-align: middle;
+				font-family: 'Raleway', sans-serif;
+				font-size: 30px;
+				color: #ff6600;
+				border: none;
+				padding: none;
+				margin: none;
+				position: absolute;
+				top: 1450px;
+
+				}
+
+				.partypackages {
+						width: 100%;
+						height: 300px;
+						text-align: center;
+
+				}
+
+				table, th, td {
+						border: 1px solid black;
+						border-collapse: collapse;
+						color: black;
+				}
+
+				table {
+						height: 200px;
+						margin-top: 100px;
+
+
+				}
+
+				th {
+					height: 50px;
+					text-align: center;
+				}
+
+				form {
+				  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+				  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+				  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+				  margin: auto;
+				  position: relative;
+				  width: 550px;
+				  height: 450px;
+				  font-family: Raleway, Geneva, sans-serif;
+				  font-size: 14px;
+
+				  line-height: 24px;
+				  font-weight: bold;
+				  color: #ff6600;
+				  text-decoration: none;
+				  border-radius: 10px;
+				  padding: 10px;
+				  border: 1px solid #999;
+				  border: inset 1px solid #333;
+				  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				}
+
+				input {
+				  width: 375px;
+				  display: block;
+				  border: 1px solid #999;
+				  height: 25px;
+				  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				}
+
+				textarea#feedback {
+				  width: 375px;
+				  height: 150px;
+				  display: block;
+				}
+
+				button {
+				  width: 100px;
+				  position: absolute;
+				  right: 20px;
+				  bottom: 20px;
+				  background: #ff6600;
+				  color: #fff;
+				  font-family: Raleway, Geneva, sans-serif;
+				  height: 30px;
+				  border-radius: 15px;
+				  border: 1p solid #999;
+				}
+
+				input.button:hover {
+				  background: #fff;
+				  color:#ff6600;
+				}
+
+				.resform {
+					position: relative;
+					top: 100px;
+				}
+
+				</style>
+
+		</head>
+
+
+
+
+	<body>
+
+
+
+	<ul class="topnav">
+		<li><a class="active" href= "index.html">Home</a></li>
+		<li><a href="attractions.html">Attractions</a></li>
+		<li><a href="dining.html">Snackbar</a></li>
+		<li><a href="PackagesandReservations.html">Packages/Reservations</a></li>
+		<li><a href="ContactUs.html">Contact Us</a></li>
+	</ul>
+
+
+	<div class= "row.fluid span12 galaxy">
+		<img src= "img/PartyFireworksCropped.png" height= "590" alt= "fireworks" style= "width:100%">
+
+			<div class= "transparent"></div>
+
+			<div class= "attractionopeningtext">
+
+				<div class="linecontainer">
+					<hr class= "hlineabove"></hr>
+				</div>
+
+			Plan . Party . Perfect
+
+				<div class="linecontainer">
+					<hr class= "hlineabove"></hr>
+				</div>
+			</div>
+	</div>
+
+
+	<div class="packagetext">
+
+				<div class="header">
+				Party Packages
+				</div>
+
+	</div>
+
+
+<div class= "partypackages">
+
+			<table align= "center" >
+				<tr>
+					<th>Cosmic ($100)</th>
+					<th>Interstellar ($175)</th>
+					<th>Intergalactic ($250)</th>
+				</tr>
+
+				<tr>
+					<td>
+						<ul>
+							<li>One Round of Laser Tag</li>
+							<li>One Round Bowling</li>
+							<li>30 Minutes of <strong>Free</strong> Arcade Time</li>
+						</ul>
+					</td>
+
+					<td>
+						<ul>
+							<li>Two Rounds of Laser Tag</li>
+							<li>One Round of Paintball</li>
+							<li>One Round of Bowling</li>
+							<li>One Hour of <strong>Free</strong> Arcade Time</li>
+						</ul>
+					</td>
+
+					<td>
+						<ul>
+							<li>Three Rounds of Laser Tag</li>
+							<li>Two Rounds of Paintball</li>
+							<li>Two Rounds of Bowling</li>
+							<li>Two Rounds of Mini Golf</li>
+							<li>Two Hours of <strong>Free</strong> Arcade Time</li>
+						</ul>
+					</td>
+				</tr>
+
+			</table>
+</div>
+
+<div class= "calendartext">
+
+			<div class="header">
+			A Glance At Our Schedule
+			</div>
+
+</div>
+
+
+
+		<div class= "calander" align= "center">
+		<iframe src="https://calendar.google.com/calendar/embed?title=Cosmos%20Reservations&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=cosmosfec%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="500" height="375" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+		<div class= "reservationtext">
+
+					<div class="header">
+					Book Your Reservation
+					</div>
+
+		</div>
+
+
+<div class= "resform" align= "center"
+
+<div class= "reservationform" align= "center">
+<!--
+	<form>
+		First name:
+  	<input type="text" name="firstname"><br><br>
+  	Last name:
+  	<input type="text" name="lastname"><br><br>
+		Email:
+  	<input type="text" name="email"><br><br>
+		Reservation Date (mm/dd/yy):
+		<input type="text" name="resdate"><br><br>
+		Reservation Start Time (from 10AM to 8pm):
+  	<input type="text" name="reservationtime"><br><br>
+		Party Package:<br>
+		<input type="radio" name="partypackage" value="cosmic" checked> Cosmic
+  	<input type="radio" name="partypackage" value="interstellar"> Interstellar
+  	<input type="radio" name="partypackage" value="intergalactic"> Intergalactic
+    -->
+		<form action= "reservations.php" method= "post">
+  <div>
+		<h4>Fill out the details and we'll get back to you.</h4>
+
+    <label>
+      <span>First Name</span><input id="firstname" type="text" name="firstname" />
+    </label>
+
+		<label>
+      <span>Last Name</span><input id="lastname" type="text" name="lastname" />
+    </label>
+
+    <label>
+      <span>Email Address</span><input id="email" type="text" name="email" />
+    </label>
+
+		<label>
+			<span>Party Package</span><input id="partypackage" type="text" name="partypackage" />
+		</label>
+
+    <label>
+      <span>Reservation Date (mm/dd/yy)</span><input id="reservationdate" type="text" name="reservationdate" />
+    </label>
+
+    <label>
+      <span>Reservation Start Time (from 10AM to 8PM)</span><input id="reservationtime" type="text" name="reservationtime" />
+      <input type="button" value="Submit Form" />
+    </label>
+
+  </div>
+</form>
+</div>
+</div>
+	<!-- Latest compiled and minified JavaScript (j.query) -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	</body>
+
+
+
+
+
+
+
+</html>
