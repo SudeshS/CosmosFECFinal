@@ -1,3 +1,5 @@
+<?php
+
 $Fname = $_POST["firstname"];
 $Lname = $_POST["lastname"];
 $Email = $_POST["email"];
@@ -10,3 +12,5 @@ $fh = fopen($dataFile, 'a');
 $comma_delmited_list = implode("\t", $_POST) . "\n";
 fwrite($fh, $comma_delmited_list);
 fclase($fh);
+
+?>
